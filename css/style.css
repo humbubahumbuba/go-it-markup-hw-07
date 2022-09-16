@@ -498,14 +498,14 @@ ol {
 
   background-color: #ffffff;
 }
-.select-menu-img {
+.product {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
-.select-link {
+.product__link {
   display: block;
   background-color: #eeeeee;
   text-decoration: none;
@@ -520,27 +520,15 @@ ol {
 .portfolio-wrapper:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 } */
-.select-link:hover,
-.select-link:focus {
+.product__link:hover,
+.product__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.select {
-  color: var(--title-text-color);
-}
-.select:hover,
-.select:focus {
-  color: var(--accent-color);
-}
-/* .select-link {
-  text-decoration: none;
-  color: var(--title-text-color);
-  width: 370px;
-} */
-/* ===============portfolio projects================== */
+/* ===============portfolio product================== */
 
-.projects-title {
+.product__title {
   margin-bottom: 4px;
 
   color: var(--title-text-color);
@@ -549,13 +537,13 @@ ol {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.projects-text {
+.product__text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-.select-button {
+.select-menu__button {
   /* margin-bottom: 50px; */
   padding: 6px 22px;
   border: none;
@@ -576,8 +564,8 @@ ol {
     box-shadow var(--animation-dur-dir);
 }
 
-.select-button:hover,
-.select-button:focus {
+.select-menu__button:hover,
+.select-menu__button:focus {
   color: var(--primary-bg-color);
   background-color: var(--button-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -596,7 +584,7 @@ ol {
   position: relative;
   overflow: hidden;
 }
-.overlay {
+.product__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -621,8 +609,8 @@ ol {
   transform: translateY(100%);
   transition: transform var(--animation-dur-dir);
 }
-.select-link:hover .overlay,
-.select-link:focus .overlay {
+.product__link:hover .product__overlay,
+.product__link:focus .product__overlay {
   transform: translateY(0%);
   /* transition: transform var(--animation-dur-dir); */
 }
