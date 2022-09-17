@@ -15,6 +15,10 @@
     width: 528px;
     min-height: 580px;
     background-color: rgb(255, 255, 255);
+
+    .backdrop.is-hidden & {
+            transform: scale(0.1);
+        }
 }
 
 .modal-close-btn {
@@ -32,11 +36,13 @@
     padding: 0;
     cursor: pointer;
     transition: fill var(--animation-dur-dir);
+
+    &:hover {
+            fill: var(--accent-color);
+        }
 }
 
-.modal-close-btn:hover {
-    fill: var(--accent-color);
-}
+
 
 /* ====================Modal form============================== */
 

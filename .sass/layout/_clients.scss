@@ -15,13 +15,15 @@
     fill: currentColor;
 
     transition: border var(--animation-dur-dir), color var(--animation-dur-dir);
+
+        &:hover,
+        &:focus {
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+        }
 }
 
-.clients__link:hover,
-.clients__link:focus {
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-}
+
 
 .clients__title {
     margin-bottom: 50px;

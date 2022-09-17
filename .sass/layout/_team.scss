@@ -82,10 +82,11 @@
 
     transition: color var(--animation-dur-dir),
         background-color var(--animation-dur-dir);
+
+            &:hover,
+            &:focus {
+                background-color: var(--accent-color);
+                color: var(--primary-bg-color);
+            }
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-bg-color);
-}
